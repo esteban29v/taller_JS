@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main class="bg-light py-3 container-fluid">
+        <div class="row d-flex justify-content-around">
+            <section class="col-5 py-3 border rounded shadow-sm w-50 bg-primary">
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <div class="text-muted">
+                        <p>Crear  un algoritmo que muestre una palabra o frase ingresada al revés y que indique cuántas letras y espacios
+                            tiene. Ejemplo: hola mundo
+                            Tamaño: 10
+                            Espacios: 1
+                            o,d,n,u,m, ,a,l,o,h</p>
+                    </div>
+                </article>
+                <span class="alert alert-warning" id="alert"></span>
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <form>
+                        <div class="form-group">
+                            <label for="str">Cadena de texto</label>
+                            <input autocomplete="off" autofocus type="text" id="str" placeholder="Ingrese la cadena de texto" class="form-control">
+                        </div>
+                        <hr>
+                        <button class="btn btn-success btn-block" id="btn" onclick="op1()" type="button">
+                            Calcular
+                        </button>
+                    </form>
+                </article>
+                <article id="results" style='display:none'>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Tamaño</h5>
+                        <span id="lng"></span>
+                    </div>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Cadena de texto invertida</h5>
+                        <span id="strinv"></span>
+                    </div>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Número de espacios</h5>
+                        <span id="wthspc"></span>
+                    </div>
+                </article>
+                <article>
+                    
+                </article>
+            </section>
+            <section class="col-5 py-3 border rounded shadow-sm w-50 bg-primary">
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <div class="text-muted">
+                        <p>Realiza un script que pida una cadena de texto y la muestre poniendo el signo – entre cada carácter. Si la cadena
+                            contiene un espacio, éste debe ser reemplazado con el siguiente símbolo <p>- - ejemplo: hola mundo rta: h-o-l-a-
+                            
+                            -m-u-n-d-o-</p></p>
+                    </div>
+                </article>
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <form>
+                        <div class="form-group">
+                            <label for="str">Cadena de texto</label>
+                            <input autocomplete="off" autofocus type="text" id="str2" placeholder="Ingrese la cadena de texto" class="form-control">
+                        </div>
+                        <hr>
+                        <button class="btn btn-success btn-block" id="btn" onclick="op2()" type="button">
+                            Calcular
+                        </button>
+                    </form>
+                </article>
+                <article id="result2" style='display:none'>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Resultado</h5>
+                        <span id="rs2"></span>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <hr>
+        <div class="row d-flex justify-content-around">
+            <section class="col-5 py-3 border rounded shadow-sm w-50 bg-primary">
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <div class="text-muted">
+                        <p>Generar un algoritmo que lea nombres por medios de una interfaz HTML, y los almacene en una lista, la canti-
+                            dad de nombres es desconocida, el algoritmo termina cuando introduzcan un valor vacío, la terminar demo
+                            
+                            mostrar el listado en forma ordenada y debe tener la validación si tratan de introducir un mismo nombre.</p>
+                    </div>
+                </article>
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <form>
+                        <div class="form-group">
+                            <label for="str">Nombres</label>
+                            <input autocomplete="off" type="text" id="str3" placeholder="Ingrese el nombre" class="form-control">
+                        </div>
+                        <hr>
+                        <button class="btn btn-success btn-block" id="btn" onclick="op3()" type="button">
+                            Calcular
+                        </button>
+                    </form>
+                </article>
+                <article id="result3" style='display:none'>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Lista</h5>
+                        <span>
+                            <ul id="list">
+
+                            </ul>
+                        </span>
+                    </div>
+                </article>
+                <article>
+                    
+                </article>
+            </section>
+            <section class="col-5 py-3 border rounded shadow-sm w-50 bg-primary">
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <div class="text-muted">
+                        <p>Realiza un script que pida una cadena de texto y la muestre poniendo el signo – entre cada carácter. Si la cadena
+                            contiene un espacio, éste debe ser reemplazado con el siguiente símbolo <p>- - ejemplo: hola mundo rta: h-o-l-a-
+                            
+                            -m-u-n-d-o-</p></p>
+                    </div>
+                </article>
+                <article class="border rounded p-3 mb-3 bg-white">
+                    <form>
+                        <div class="form-group">
+                            <label for="str">Cadena de texto</label>
+                            <input autocomplete="off" autofocus type="text" id="str2" placeholder="Ingrese la cadena de texto" class="form-control">
+                        </div>
+                        <hr>
+                        <button class="btn btn-success btn-block" id="btn" onclick="op2()" type="button">
+                            Calcular
+                        </button>
+                    </form>
+                </article>
+                <article id="result2" style='display:none'>
+                    <div class="border rounded p-3 mb-3 bg-white">
+                        <h5>Resultado</h5>
+                        <span id="rs2"></span>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
